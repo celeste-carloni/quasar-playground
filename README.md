@@ -1,1 +1,3 @@
-quasar-playground
+# Quasar App
+
+> WIP
