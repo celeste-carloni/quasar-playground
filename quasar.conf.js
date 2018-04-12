@@ -4,7 +4,8 @@ module.exports = function (ctx) {
   return {
     // app plugins (/src/plugins)
     plugins: [
-      'axios'
+      'axios',
+      'vuelidate'
     ],
     css: [
       'app.styl'
@@ -45,7 +46,9 @@ module.exports = function (ctx) {
     // framework: 'all' --- includes everything; for dev only!
     framework: {
       components: [
+        'QBtn',
         'QCheckbox',
+        'QField',
         'QInput',
         'QOptionGroup',
         'QSelect',
@@ -56,7 +59,6 @@ module.exports = function (ctx) {
         'QPage',
         'QToolbar',
         'QToolbarTitle',
-        'QBtn',
         'QIcon',
         'QList',
         'QListHeader',

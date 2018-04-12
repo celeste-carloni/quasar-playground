@@ -12,7 +12,7 @@ export default [
     component: () => import('layouts/AuthLayout'),
     children: [
       { path: '/dashboard', component: () => import('pages/DashboardPage') },
-      { path: '/new-project', component: () => import('pages/NewProjectPage') }
+      { path: '/new-project', component: () => import('pages/new-project/NewProjectPage') }
     ]
   },
   { // Always leave this as last one
