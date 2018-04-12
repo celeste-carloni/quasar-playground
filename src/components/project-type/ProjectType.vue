@@ -16,6 +16,8 @@
             type="number"
             v-model="type.budget"
             min="0"
+            :decimals="2"
+            numeric-keyboard-toggle
             @input="updateBudget(type.value)"
           ) 
 

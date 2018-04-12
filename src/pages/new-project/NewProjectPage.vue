@@ -62,7 +62,9 @@
                     q-input(
                       prefix="$"
                       type="number"
+                      numeric-keyboard-toggle
                       min="0"
+                      :decimals="2"
                       v-model="form.hourlyRate"
                     )
                   //- end: hourly rate
@@ -96,9 +98,15 @@
 
             .col-12
               q-btn(
+                label="Create Project"
+                :loading="submitting"
                 color="primary"
                 @click="submit"
-              ) Create Project
+              )
+                q-spinner(
+                  slot="loading"
+                )
+
   </q-page>
 </template>
 
