@@ -1,16 +1,10 @@
 
 export default [
-  { //default layout:sample
-    path: '/',
-    component: () => import('layouts/default'),
-    children: [
-      { path: '', component: () => import('pages/index') }
-    ]
-  },
   {
-    path: '/auth',
+    path: '/',
     component: () => import('layouts/AuthLayout'),
     children: [
+      { path: '', component: () => import('pages/index') },
       { path: '/dashboard', component: () => import('pages/DashboardPage') },
       { path: '/new-project', component: () => import('pages/new-project/NewProjectPage') }
     ]
